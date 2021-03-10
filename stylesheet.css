@@ -1,1 +1,34 @@
-
+* {     
+    box-sizing: border-box;     
+    margin: 0;     
+    padding: 0; 
+}  
+:root{     
+    --main-font: ;     
+    --secondary-font:  ;     
+    --bg-colour: #3487;     
+    font-size: 1rem; 
+}  
+body{     
+    font-family: var(--main-font); 
+}  
+.navbar{     
+    overflow: hidden;     
+    background-color: var(--bg-colour);     
+    position: relative; 
+} 
+/*  #nav-links{     
+    display: none; 
+} */  
+#nav-links a{     
+    color: white;     
+    padding: 1rem; 
+}  
+.notextdec{     
+    text-decoration: none; 
+}  
+.evenlyspaced{    
+    display:flex;     
+    justify-content: space-between;     
+    align-items: center; 
+}

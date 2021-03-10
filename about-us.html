@@ -6,38 +6,51 @@
     <title>About Us</title>
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="carousel-style.css" type="text/css">
-
   </head>
-  <p>An agency with a difference: LOUD is hear to make some noise!</p>
-
-  <div class="img-carousel-container">
-    <div class="carousel">
-      <div id="playPause" onclick="switchPlayPause()"></div>
-      <button onclick="addSlides(-1)" class="left-btn"><img src="images/left-arrow.svg" alt=""></button>
-      <button onclick="addSlides(1)" class="right-btn"><img src="images/right-arrow.svg" alt=""></button>
-
-      <div class="slide">
-        <img src="" alt="">
-      </div>
-      <div class="slide">
-        <img src="" alt="">
-      </div>
-      <div class="slide">
-        <img src="" alt="">
-      </div>
-      <div class="slide">
-        <img src="" alt="">
-      </div>
-      <div class="slide">
-        <img src="" alt="">
-      </div>
-    </div>
-
-  </div>
-
 
   <body>
   
+    <nav class="navbar evenlyspaced"> 
+      <a class="active notextdec" href=#home >Home (Logo) </a>       
+      <!-- all of these should be hidden -->       
+      <div id="nav-links">         
+        <a href=#about-us class="notextdec">About Us</a>         
+        <a href=#contact class="notextdec">Contact</a>        
+      </div>       
+      <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+        <i class="fas fa-bars"></i>
+      </a>     
+    </nav>   
+
+    <section class="aboutus">
+      <p>An agency with a difference: LOUD is hear to make some noise!</p>
+  
+      <div class="img-carousel-container">
+        <div class="carousel">
+          <div id="playPause" onclick="switchPlayPause()"></div>
+          <button onclick="addSlides(-1)" class="left-btn"><img src="images/left-arrow.svg" alt=""></button>
+          <button onclick="addSlides(1)" class="right-btn"><img src="images/right-arrow.svg" alt=""></button>
+  
+          <div class="slide">
+            <img src="" alt="">
+          </div>
+          <div class="slide">
+            <img src="" alt="">
+          </div>
+          <div class="slide">
+            <img src="" alt="">
+          </div>
+          <div class="slide">
+            <img src="" alt="">
+          </div>
+          <div class="slide">
+          <img src="" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
   <script src="scripts.js"></script>
   </body>
 </html>
