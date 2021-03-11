@@ -7,7 +7,7 @@
     --main-colour:hsl(207,95%,8%);     
     --secondary-colour: hsl(353, 81%, 51%);
     --tertiary-colour: hsl(35, 100%, 55%);
-    --tiffany-blue-colour: hsl(100, 100%, 99%);     
+    --tiffany-blue-colour: hsl(174, 62%, 47%);     
     --bg-colour:hsl(100, 100%, 99%);     
     font-size: 1rem; 
 }  
@@ -15,26 +15,52 @@
 orange peel- hsl(35, 100%, 55%)
 Rose Madder - hsl(353, 81%, 51%)
 Tiffany Blue- hsl(174, 62, 47)
-Baby Powder- hsl(100, 100%, 99%)
+Baby Powder- hsl(100, 100%, 99%)gp
 Rich Black Fogra 29 - hsl(207,95%,8%)
 */
 body{     
     font-family: var(--main-colour); 
     background: rgb(46,196,182);
-    background: linear-gradient(30deg, rgba(46,196,182,0.3) 20%, rgba(255,159,28,0.3) 85%, rgba(231,29,54,0.3) 100%); 
+    background: linear-gradient(10deg, rgba(46,196,182,0.2) 20%, rgba(255,159,28,0.2) 75%, rgba(231,29,54,0.2) 100%); 
+    padding-bottom: 100px;
 }
     .navbar{     
     overflow: hidden;     
-    /* background-color: var(--bg-colour);      */
     position: relative; 
+    padding:1rem;
 } 
+.navbar:hover{
+    background-color: var(--tertiary-colour);
+    color: var(--bg-colour);
+}
+.navbar:hover #nav-links a{
+    color: var(--bg-colour);
+}
+#nav-links a:hover{
+    background-color: var(--secondary-colour);
+}
 #nav-links{     
-    display: none; 
-} 
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+}
 #nav-links a{     
-    color: white;     
+    color: var(--tiffany-blue-colour);     
     padding: 1rem; 
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+   
 }  
+.logo{
+   position:absolute;
+   left:0;
+   top:0;
+}
+#hamburger-menu{
+    position:absolute;
+    right:0;
+    top:0;
+}
 .notextdec{     
     text-decoration: none; 
 }  
@@ -42,6 +68,18 @@ body{
     display:flex;     
     justify-content: space-between;     
     align-items: center; 
+}
+
+@media only screen and (min-width:768px) {
+    #nav-links a{     
+        display:flex; 
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+    }  
+    #hamburger-menu{
+        /* display:none; */
+    }
 }
 
 .about-us-container {
@@ -53,7 +91,7 @@ body{
     position: relative;
     height: 500px;
     width: 25%;
-    min-width: 300px;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,43 +102,44 @@ body{
 .staff-name {
 height: 60px;
 width: 150px;
-background-color:rgba(1,22,39, 0.9);
+background-color:rgba(1,22,39, 0.95);
 position: absolute;
 z-index: 1;
 top: 40px;
-left: 0;
+left: 0%;
 text-align: center;
 color:rgb(253,255,252);
 padding: 5px;
+border-radius: 5%;
 }
 
 .staff-blurb {
 position: absolute;
 width: 70%;
-background-color:rgba(253,255,252,0.8);
-top: 70%;
-right: -10%;
+background-color:rgba(253,255,252,0.9);
+top: 80%;
+right: 0%;
 color: #011627;
-padding: 5px;
+padding: 7px;
+outline: thick dashed rgba(1,22,39, 0.2);
 }
 
 .staff-image-container {
     position: relative;
     height: auto;
     width: 100%;
-    background-color: orange;
-    border-radius: 10%;
     overflow: hidden;
-    clip-path: circle(80%);
+    display: flex;
+    align-items: center;
 }
 
 .staff-image {
-    width: 100%;
+    width: 250px;
     height: auto;
     display: inline;
-    z-index: 2;
     margin: auto;
-    clip-path: circle(80%);
+    border-radius: 5%;
+    outline: thick dashed rgba(253,255,252,0.7);
 }
 
 .formsection{
