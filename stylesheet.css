@@ -141,3 +141,8 @@ outline: thick dashed rgba(1,22,39, 0.2);
     border-radius: 5%;
     outline: thick dashed rgba(253,255,252,0.7);
 }
+
+.formsection{
+    margin: 5rem;
+}
+

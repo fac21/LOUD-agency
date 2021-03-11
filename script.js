@@ -7,3 +7,4 @@ function hamburgerMenu(){
     //this will just toggle between displaying the links and not displaying them!
     hambLinks.style.display === "flex"? hambLinks.style.display = "none" : hambLinks.style.display = "flex"
 }
+
