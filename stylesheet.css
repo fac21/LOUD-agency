@@ -4,22 +4,32 @@
     padding: 0; 
 }  
 :root{     
-    --main-font: ;     
-    --secondary-font:  ;     
-    --bg-colour: #3487;     
+    --main-colour:hsl(207,95%,8%);     
+    --secondary-colour: hsl(353, 81%, 51%);
+    --tertiary-colour: hsl(35, 100%, 55%);
+    --tiffany-blue-colour: hsl(100, 100%, 99%);     
+    --bg-colour:hsl(100, 100%, 99%);     
     font-size: 1rem; 
 }  
+/* Craigs colors- https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
+orange peel- hsl(35, 100%, 55%)
+Rose Madder - hsl(353, 81%, 51%)
+Tiffany Blue- hsl(174, 62, 47)
+Baby Powder- hsl(100, 100%, 99%)
+Rich Black Fogra 29 - hsl(207,95%,8%)
+*/
 body{     
-    font-family: var(--main-font); 
+    font-family: var(--main-colour); 
+    background-color: var(--bg-colour); 
 }  
 .navbar{     
     overflow: hidden;     
-    background-color: var(--bg-colour);     
+    /* background-color: var(--bg-colour);      */
     position: relative; 
 } 
-/*  #nav-links{     
+#nav-links{     
     display: none; 
-} */  
+} 
 #nav-links a{     
     color: white;     
     padding: 1rem; 
