@@ -94,8 +94,10 @@ body{
 
 .about-us-container {
     display: flex;
-
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
     width: 100%;
+    justify-content: center;
 }
 
 .staff-info {
@@ -107,7 +109,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 20px;
+    margin: 0 0 6rem 0;
 }
 
 .staff-name {
@@ -116,7 +118,7 @@ width: 150px;
 background-color:rgba(1,22,39, 0.95);
 position: absolute;
 z-index: 1;
-top: 40px;
+top: 15%;
 left: 0%;
 text-align: center;
 color:rgb(253,255,252);
@@ -129,7 +131,7 @@ position: absolute;
 width: 70%;
 background-color:rgba(253,255,252,0.9);
 top: 80%;
-right: 0%;
+right: 5%;
 color: #011627;
 padding: 7px;
 outline: thick dashed rgba(1,22,39, 0.2);
