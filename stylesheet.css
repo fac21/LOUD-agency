@@ -7,7 +7,7 @@
     --main-colour:hsl(207,95%,8%);     
     --secondary-colour: hsl(353, 81%, 51%);
     --tertiary-colour: hsl(35, 100%, 55%);
-    --tiffany-blue-colour: hsl(100, 100%, 99%);     
+    --tiffany-blue-colour: hsl(174, 62%, 47%);     
     --bg-colour:hsl(100, 100%, 99%);     
     font-size: 1rem; 
 }  
@@ -15,7 +15,7 @@
 orange peel- hsl(35, 100%, 55%)
 Rose Madder - hsl(353, 81%, 51%)
 Tiffany Blue- hsl(174, 62, 47)
-Baby Powder- hsl(100, 100%, 99%)
+Baby Powder- hsl(100, 100%, 99%)gp
 Rich Black Fogra 29 - hsl(207,95%,8%)
 */
 body{     
@@ -26,16 +26,41 @@ body{
 }
     .navbar{     
     overflow: hidden;     
-    /* background-color: var(--bg-colour);      */
     position: relative; 
+    padding:1rem;
 } 
+.navbar:hover{
+    background-color: var(--tertiary-colour);
+    color: var(--bg-colour);
+}
+.navbar:hover #nav-links a{
+    color: var(--bg-colour);
+}
+#nav-links a:hover{
+    background-color: var(--secondary-colour);
+}
 #nav-links{     
-    display: none; 
-} 
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+}
 #nav-links a{     
-    color: white;     
+    color: var(--tiffany-blue-colour);     
     padding: 1rem; 
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+   
 }  
+.logo{
+   position:absolute;
+   left:0;
+   top:0;
+}
+#hamburger-menu{
+    position:absolute;
+    right:0;
+    top:0;
+}
 .notextdec{     
     text-decoration: none; 
 }  
@@ -43,6 +68,18 @@ body{
     display:flex;     
     justify-content: space-between;     
     align-items: center; 
+}
+
+@media only screen and (min-width:768px) {
+    #nav-links a{     
+        display:flex; 
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+    }  
+    #hamburger-menu{
+        /* display:none; */
+    }
 }
 
 .about-us-container {
@@ -104,4 +141,5 @@ outline: thick dashed rgba(1,22,39, 0.2);
     border-radius: 5%;
     outline: thick dashed rgba(253,255,252,0.7);
 }
+
 
