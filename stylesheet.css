@@ -18,8 +18,9 @@ Tiffany Blue- hsl(174, 62, 47)
 Baby Powder- hsl(100, 100%, 99%)gp
 Rich Black Fogra 29 - hsl(207,95%,8%)
 */
-body{     
-    font-family: var(--main-colour); 
+body{    
+    font-family: 'Roboto Mono', monospace;
+    color: var(--main-colour); 
     background: rgb(46,196,182);
     background: linear-gradient(10deg, rgba(46,196,182,0.2) 20%, rgba(255,159,28,0.2) 75%, rgba(231,29,54,0.2) 100%); 
     padding-bottom: 100px;
@@ -86,16 +87,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+    
 }
 
 .main-logo {
     width: 300px;
+    margin-bottom: 3rem;
 }
 
 .about-us-container {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 7rem;
+    margin: 1rem 0 0rem 0;
     width: 100%;
     justify-content: center;
 }
@@ -113,13 +118,15 @@ body{
 }
 
 .staff-name {
+font-family: 'Roboto Mono', monospace;
+font-size: 0.8rem;
 height: 60px;
 width: 150px;
 background-color:rgba(1,22,39, 0.95);
 position: absolute;
 z-index: 1;
 top: 15%;
-left: 0%;
+left: 5%;
 text-align: center;
 color:rgb(253,255,252);
 padding: 5px;
@@ -127,10 +134,13 @@ border-radius: 5%;
 }
 
 .staff-blurb {
+font-family: 'DotGothic16', sans-serif;
+font-weight: bold;
+font-size: 0.5em;
 position: absolute;
 width: 70%;
-background-color:rgba(253,255,252,0.9);
-top: 80%;
+background-color:rgba(253,255,252,0.6);
+top: 76%;
 right: 5%;
 color: #011627;
 padding: 7px;
@@ -159,3 +169,11 @@ outline: thick dashed rgba(1,22,39, 0.2);
     margin: 5rem;
 }
 
+.flexcenter{
+    display: flex;
+    justify-content: center;
+}
+
+.sixtych{
+    max-width: 60ch;
+}
