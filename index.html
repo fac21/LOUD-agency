@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>¡LOUD Agency!</title>
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="carousel-style.css" type="text/css">
   </head>
 
   <body>
@@ -90,21 +89,25 @@
 
     </section>
 
-<section class="formsection">
+<section class="formsection flexcenter">
       <form
-      id="form"
+      id="form" class="sixtych"
     >
       <label for="name">Name</label>
       <input id="name" name="name" type="text" required/>
+</br>
 
       <label for="coname">Company Name</label>
       <input id="coname" name="coname" type="text" required/>
+</br>
 
       <label for="email">Email</label>
       <input id="email" name="email" type="email" required/>
+</br>
 
       <label for="tel">Telephone</label>
       <input id="tel" name="tel" type="tel" />
+</br>
 
       <fieldset>
         <legend>Preferred contact method</legend>
@@ -117,6 +120,7 @@
           checked
         />
         <label for="contact-email" class="radio">Email</label>
+      </br>
 
         <input id="contact-tel" type="radio" name="contact" value="telephone" />
         <label for="contact-tel" class="radio">Telephone</label>
