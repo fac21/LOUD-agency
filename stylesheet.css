@@ -32,3 +32,33 @@ body{
     justify-content: space-between;     
     align-items: center; 
 }
+
+.about-us-container {
+    display: flex;
+    width: 80%;
+    background-color: black;
+}
+
+.staff-info {
+    height: 500px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.staff-name {
+height: 30px;
+width: 60px;
+background-color: blue;
+}
+
+.staff-blurb {
+height: 150px;
+width: 150px;
+}
+
+.staff-image {
+
+}
