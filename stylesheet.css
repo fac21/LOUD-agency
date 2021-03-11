@@ -169,3 +169,11 @@ outline: thick dashed rgba(1,22,39, 0.2);
     margin: 5rem;
 }
 
+.flexcenter{
+    display: flex;
+    justify-content: center;
+}
+
+.sixtych{
+    max-width: 60ch;
+}

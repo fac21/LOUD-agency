@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>¡LOUD Agency!</title>
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="carousel-style.css" type="text/css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Fascinate&family=Roboto+Mono:wght@100;300;500&display=swap');
-      </style> 
+    </style>
   </head>
 
   <body>
@@ -94,25 +93,32 @@
 
     </section>
 
-<section class="formsection">
+<section class="formsection flexcenter">
       <form
-      id="form"
+      id="form" class="sixtych"
     >
-      <label for="name">Name</label>
+      <label for="name">Name:</label>
+    </br>
       <input id="name" name="name" type="text" required/>
+</br>
 
-      <label for="coname">Company Name</label>
+      <label for="coname">Company Name:</label>
+    </br>
       <input id="coname" name="coname" type="text" required/>
+</br>
 
-      <label for="email">Email</label>
+      <label for="email">Email:</label>
+    </br>
       <input id="email" name="email" type="email" required/>
+</br>
 
-      <label for="tel">Telephone</label>
+      <label for="tel">Telephone:</label>
+    </br>
       <input id="tel" name="tel" type="tel" />
+</br>
 
       <fieldset>
-        <legend>Preferred contact method</legend>
-
+        <legend>Preferred contact method:</legend>
         <input
           id="contact-email"
           type="radio"
@@ -127,11 +133,12 @@
       </fieldset>
 
       <label for="message">Comments:</label>
+    </br>
       <textarea name="message"></textarea>
-
+  </br>
       <input id="marketingConsent" name="marketingConsent" type="checkbox" />
       <label for="marketingConsent" class="checkbox">Just wreck my inbox</label>
-
+  </br>
       <button type="submit">Submit</button>
     </form>
     </section>
