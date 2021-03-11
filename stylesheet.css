@@ -9,8 +9,28 @@
     --tertiary-colour: hsl(35, 100%, 55%);
     --tiffany-blue-colour: hsl(174, 62%, 47%);     
     --bg-colour:hsl(100, 100%, 99%);     
-    font-size: 1rem; 
+    --font-size: 1rem;
 }  
+
+.fascinate-font {
+    font-family: 'Fascinate', cursive;
+}
+
+.font-md {
+    font-size: 2.2rem;
+}
+
+.font-lg {
+    font-size: 3rem;
+}
+
+.font-red {
+    color: #E71D36;
+}
+
+.font-blue {
+    color: #2EC4B6;
+}
 body{    
     font-family: 'Roboto Mono', monospace;
     color: var(--main-colour); 
@@ -125,7 +145,7 @@ font-family: 'Roboto Mono', monospace;
 font-size: 0.8rem;
 height: 60px;
 width: 150px;
-background-color:rgba(1,22,39, 0.95);
+background-color: rgba(1,22,39, 0.8);
 position: absolute;
 z-index: 1;
 top: 15%;
