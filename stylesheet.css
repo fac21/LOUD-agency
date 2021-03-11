@@ -20,9 +20,10 @@ Rich Black Fogra 29 - hsl(207,95%,8%)
 */
 body{     
     font-family: var(--main-colour); 
-    background-color: var(--bg-colour); 
-}  
-.navbar{     
+    background: rgb(46,196,182);
+    background: linear-gradient(30deg, rgba(46,196,182,0.3) 20%, rgba(255,159,28,0.3) 85%, rgba(231,29,54,0.3) 100%); 
+}
+    .navbar{     
     overflow: hidden;     
     position: relative; 
     padding:1rem;
@@ -79,3 +80,64 @@ body{
         /* display:none; */
     }
 }
+
+.about-us-container {
+    display: flex;
+    width: 100%;
+}
+
+.staff-info {
+    position: relative;
+    height: 500px;
+    width: 25%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.staff-name {
+height: 60px;
+width: 150px;
+background-color:rgba(1,22,39, 0.9);
+position: absolute;
+z-index: 1;
+top: 40px;
+left: 0;
+text-align: center;
+color:rgb(253,255,252);
+padding: 5px;
+}
+
+.staff-blurb {
+position: absolute;
+width: 70%;
+background-color:rgba(253,255,252,0.8);
+top: 70%;
+right: -10%;
+color: #011627;
+padding: 5px;
+}
+
+.staff-image-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: orange;
+    border-radius: 10%;
+    overflow: hidden;
+    clip-path: circle(80%);
+}
+
+.staff-image {
+    width: 100%;
+    height: auto;
+    display: inline;
+    z-index: 2;
+    margin: auto;
+    clip-path: circle(80%);
+}
+
+
