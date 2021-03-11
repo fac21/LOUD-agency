@@ -35,38 +35,60 @@ body{
 
 .about-us-container {
     display: flex;
-    width: 80%;
-    background-color: black;
+    width: 100%;
 }
 
 .staff-info {
     position: relative;
     height: 500px;
     width: 25%;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: red;
-
+    margin: 20px;
 }
 
 .staff-name {
-height: 70px;
+height: 60px;
 width: 150px;
-background-color: blue;
+background-color:rgba(1,22,39, 0.9);
+position: absolute;
+z-index: 1;
+top: 40px;
+left: 0;
+text-align: center;
+color:rgb(253,255,252);
+padding: 5px;
 }
 
 .staff-blurb {
-height: 170px;
-width: 170px;
-background-color: pink;
+position: absolute;
+width: 70%;
+background-color:rgba(253,255,252,0.8);
+top: 70%;
+right: -10%;
+color: #011627;
+padding: 5px;
+}
+
+.staff-image-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background-color: orange;
+    border-radius: 10%;
+    overflow: hidden;
+    clip-path: circle(80%);
 }
 
 .staff-image {
-    position: relative;
-    height: 200px;
-    width: 200px;
-    background-color: orange;
-    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    display: inline;
+    z-index: 2;
+    margin: auto;
+    clip-path: circle(80%);
 }
+
