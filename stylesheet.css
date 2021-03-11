@@ -63,17 +63,20 @@ body{
     padding: 1rem; 
     margin-top: 5vh;
     margin-bottom: 5vh;
+    display: block; 
+    transition: 0.6s ease;
+    border-radius: 1.5rem;
    
 }  
 .logo{
    position:absolute;
-   left:0;
-   top:0;
+   left:1rem;
+   top:1rem;
 }
 #hamburger-menu{
     position:absolute;
-    right:0;
-    top:0;
+    right:1rem;
+    top:1rem;
 }
 .notextdec{     
     text-decoration: none; 
@@ -92,16 +95,16 @@ body{
      }
 
 
-    #nav-links{     
-        
+    #nav-links{       
         flex-direction: row;
-        justify-content: right;
+        justify-content: space-between;
+        align-items: center;
     }
     #nav-links a{     
         color: var(--tiffany-blue-colour);     
         padding: 1rem; 
-        margin: 0 auto;
-       
+        margin: 1rem;
+
     }
     
 }
@@ -112,7 +115,7 @@ body{
     align-items: center;
     font-size: 1.7rem;
     text-align: center;
-    
+    margin-top: 3rem;
 }
 
 .main-logo {
@@ -199,4 +202,20 @@ outline: thick dashed rgba(1,22,39, 0.2);
 
 .sixtych{
     max-width: 60ch;
+}
+.submit-btn{
+    transition: 0.6s ease;
+    border-radius: 1.5rem;
+    padding:1rem;
+    background-color: var(--tiffany-blue-colour);  
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left:4rem;
+}
+.submit-btn:hover{
+    transition: 0.6s ease;
+    background-color:var(--secondary-colour);
+    cursor: pointer;
+    color: var(--bg-colour);
 }
