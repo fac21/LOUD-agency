@@ -6,32 +6,33 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>¡LOUD Agency!</title>
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="carousel-style.css" type="text/css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Fascinate&family=Roboto+Mono:wght@100;300;500&display=swap');
-      </style> 
+    </style>
   </head>
 
   <body>
   
     <nav class="navbar evenlyspaced"> 
-      <a class="active logo notextdec" href=#home ><img src="images/LOUD-logo.png" alt="Loud logo" width="50"></a>       
+      <a class="active logo notextdec" href=#home ><img src="images/LOUD-logo.png" alt="Loud company logo, a round blue circle, inside is written we are loud in red font" width="50"></a>       
       <!-- all of these should be hidden in mobile version -->       
-      <div id="nav-links">         
-        <a href=#about-us class="notextdec">About Us</a>         
-        <a href=#contact class="notextdec ">Contact</a>        
+      <div id="nav-links">       
+        <a href=#aboutus class="notextdec" alt="About Us link">About Us</a>         
+        <a href=#contact class="notextdec"alt="Contact link" >Contact</a>        
       </div>       
-      <a href="javascript:void(0);" id="hamburger-menu" class="icon" onclick="hamburgerMenu()">
+      <a href="javascript:void(0);" id="hamburger-menu"  alt="mobile menu" class="icon" onclick="hamburgerMenu()">
         <i class="fas fa-bars"></i>
       </a>     
     </nav>   
 
-
-    <section class="aboutus">
+    <section id="aboutus">
      
-      <img src="images/LOUD-logo.png" alt="logo" class="main-logo">
+      <img src="images/LOUD-logo.png" alt="Loud company logo, a round blue circle, inside is written we are loud in red font" class="main-logo">
       <p>An agency with a difference: <br>
-        <span class="font-lg fascinate-font font-blue">¡<span class="font-red">LOUD</span>!</span>  <span class="font-md">is hear to make some noise!</span></p>
+
+        <span class="font-lg fascinate-font font-blue">¡<span class="font-red">LOUD</span>!  </span>
+        <span class="font-md">is hear to make some noise!</span>
+      </p>
   
       <div class="about-us-container">
         <div class="staff-info">
@@ -39,7 +40,7 @@
             <h2>Michael Devlin</h2>
           </div>
   <div class="staff-image-container">
-          <img src="images/meowth.png" class="staff-image">
+          <img src="images/meowth.png" class="staff-image" alt="a picture of the pokemon character meowth " >
   </div>
           <div class="staff-blurb">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -52,7 +53,7 @@
             <h2>Amy <br>Kuner</h2>
           </div>
   <div class="staff-image-container">
-          <img src="images/jigglypuff.png" class="staff-image">
+          <img src="images/jigglypuff.png" class="staff-image" alt="a picture of the pokemon character bulbasaur">
   </div>
           <div class="staff-blurb">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -65,7 +66,7 @@
             <h2>Craig <br>MacLeod</h2>
           </div>
   <div class="staff-image-container">
-          <img src="images/bulbasaur.png" class="staff-image">
+          <img src="images/bulbasaur.png" class="staff-image" alt="a picture of the pokemon character bulbasaur ">
   </div>
           <div class="staff-blurb">
 <p>Yo, my name's Craig and I'm here to say<br>
@@ -82,7 +83,7 @@
             <h2>Safia <br>Ali</h2>
           </div>
   <div class="staff-image-container">
-          <img src="images/pikachu.png" class="staff-image">
+          <img src="images/pikachu.png" class="staff-image" alt="a picture of the pokemon character pikachu">
   </div>
           <div class="staff-blurb">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -94,25 +95,33 @@
 
     </section>
 
-<section class="formsection">
+<section id="contact" class="formsection flexcenter">
+
       <form
-      id="form"
+      id="form" class="sixtych"
     >
-      <label for="name">Name</label>
+      <label for="name">Name:</label>
+    </br>
       <input id="name" name="name" type="text" required/>
+</br>
 
-      <label for="coname">Company Name</label>
+      <label for="coname">Company Name:</label>
+    </br>
       <input id="coname" name="coname" type="text" required/>
+</br>
 
-      <label for="email">Email</label>
+      <label for="email">Email:</label>
+    </br>
       <input id="email" name="email" type="email" required/>
+</br>
 
-      <label for="tel">Telephone</label>
+      <label for="tel">Telephone:</label>
+    </br>
       <input id="tel" name="tel" type="tel" />
+</br>
 
       <fieldset>
-        <legend>Preferred contact method</legend>
-
+        <legend>Preferred contact method:</legend>
         <input
           id="contact-email"
           type="radio"
@@ -126,12 +135,14 @@
         <label for="contact-tel" class="radio">Telephone</label>
       </fieldset>
 
-      <label for="message">Comments:</label>
-      <textarea name="message"></textarea>
+      <label for="comments">Comments:</label>
+    </br>
+      <textarea name="comments"id="comments"></textarea>
+    </br>
 
       <input id="marketingConsent" name="marketingConsent" type="checkbox" />
       <label for="marketingConsent" class="checkbox">Just wreck my inbox</label>
-
+  </br>
       <button type="submit">Submit</button>
     </form>
     </section>
