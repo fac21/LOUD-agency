@@ -11,13 +11,6 @@
     --bg-colour:hsl(100, 100%, 99%);     
     font-size: 1rem; 
 }  
-/* Craigs colors- https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
-orange peel- hsl(35, 100%, 55%)
-Rose Madder - hsl(353, 81%, 51%)
-Tiffany Blue- hsl(174, 62, 47)
-Baby Powder- hsl(100, 100%, 99%)gp
-Rich Black Fogra 29 - hsl(207,95%,8%)
-*/
 body{    
     font-family: 'Roboto Mono', monospace;
     color: var(--main-colour); 
@@ -72,15 +65,25 @@ body{
 }
 
 @media only screen and (min-width:768px) {
-    #nav-links a{     
-        display:flex; 
+    .logo{
+        position:relative;
+        left:0;
+        top:0;
+     }
+
+
+    #nav-links{     
+        
         flex-direction: row;
-        justify-content:center;
-        align-items:center;
-    }  
-    #hamburger-menu{
-        /* display:none; */
+        justify-content: right;
     }
+    #nav-links a{     
+        color: var(--tiffany-blue-colour);     
+        padding: 1rem; 
+        margin: 0 auto;
+       
+    }
+    
 }
 
 #aboutus {
