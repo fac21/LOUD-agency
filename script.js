@@ -1,4 +1,6 @@
+function hamburgerMenu(){
 
+}
 // Index of current slide
 
 let currentIndexOfSlides,slides;
