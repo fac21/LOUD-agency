@@ -17,9 +17,10 @@ body{
     background-color: var(--bg-colour);     
     position: relative; 
 } 
-/*  #nav-links{     
+  #nav-links{     
     display: none; 
-} */  
+}
+  
 #nav-links a{     
     color: white;     
     padding: 1rem; 
