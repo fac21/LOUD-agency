@@ -20,9 +20,10 @@ Rich Black Fogra 29 - hsl(207,95%,8%)
 */
 body{     
     font-family: var(--main-colour); 
-    background-color: var(--bg-colour); 
-}  
-.navbar{     
+    background: rgb(46,196,182);
+    background: linear-gradient(30deg, rgba(46,196,182,0.3) 20%, rgba(255,159,28,0.3) 85%, rgba(231,29,54,0.3) 100%); 
+}
+    .navbar{     
     overflow: hidden;     
     /* background-color: var(--bg-colour);      */
     position: relative; 
