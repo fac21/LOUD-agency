@@ -215,7 +215,7 @@ outline: thick dashed var(--main-colour);
     line-height: 2;
     padding: 0 0.5rem 1rem 0.5rem;
     border: none;
-    /* outline: none; */
+    outline: dashed;
 }
 
 .submit-btn{
