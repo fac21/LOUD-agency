@@ -13,15 +13,15 @@
 
   <body>
   
-    <nav class="navbar evenlyspaced"> 
-      <a class="active logo notextdec" href=#home ><img src="images/LOUD-logo.png" alt="Loud company logo, a round blue circle, inside is written we are loud in red font" width="50"></a>       
+    <nav aria-label="navigation bar" class="navbar evenlyspaced"> 
+      <a aria-label="Loud Agency company logo" class="active logo notextdec" href=#home ><img src="images/LOUD-logo.png" alt="Loud company logo, a round blue circle, inside is written we are loud in red font" width="50"></a>       
       <!-- all of these should be hidden in mobile version -->       
       <div id="nav-links">       
-        <a href=#aboutus class="notextdec" alt="About Us link">About Us</a>         
-        <a href=#contact class="notextdec"alt="Contact link" >Contact</a>        
+        <a aria-label="about us section, button" href=#aboutus class="notextdec" alt="About Us link">About Us</a>         
+        <a aria-label="contact us section, button" href=#contact class="notextdec"alt="Contact link" >Contact</a>        
       </div>       
       <a href="javascript:void(0);" id="hamburger-menu"  alt="mobile menu" class="icon" onclick="hamburgerMenu()">
-        <i class="fas fa-bars"></i>
+        <i aria-label="menu" class="fas fa-bars"></i>
       </a>     
     </nav>   
 
@@ -40,7 +40,7 @@
             <h2>Michael Devlin</h2>
           </div>
   <div class="staff-image-container">
-          <img src="images/meowth.png" class="staff-image" alt="a picture of the pokemon character meowth " >
+          <img aria-label="staff member" src="images/meowth.png" class="staff-image" alt="a picture of the pokemon character meowth " >
   </div>
           <div class="staff-blurb">
 <p>Hi there. I'm Michael. A lot of people tell me I look like the Pok'emon character Meowth. But the truth is that I'm not, in fact, Meowth. Feel free to contact me-ow.</p>
@@ -53,7 +53,7 @@
             <h2>Amy <br>Kuner</h2>
           </div>
   <div class="staff-image-container">
-          <img src="images/jigglypuff.png" class="staff-image" alt="a picture of the pokemon character bulbasaur">
+          <img aria-label="staff member" src="images/jigglypuff.png" class="staff-image" alt="a picture of the pokemon character bulbasaur">
   </div>
           <div class="staff-blurb">
 <p>I'm Amy aka Jigglypuff. I'm an ENFP with attitude. I'm a sustainability expert and I own a mattress made from all recycled materials.</p>
@@ -66,7 +66,7 @@
             <h2>Craig <br>MacLeod</h2>
           </div>
   <div class="staff-image-container">
-          <img src="images/bulbasaur.png" class="staff-image" alt="a picture of the pokemon character bulbasaur ">
+          <img aria-label="staff member" src="images/bulbasaur.png" class="staff-image" alt="a picture of the pokemon character bulbasaur ">
   </div>
           <div class="staff-blurb">
 <p>Yo, my name's Craig and I'm here to say<br>
@@ -83,7 +83,7 @@
             <h2>Safia <br>Ali</h2>
           </div>
   <div class="staff-image-container">
-          <img src="images/pikachu.png" class="staff-image" alt="a picture of the pokemon character pikachu">
+          <img aria-label="staff member" src="images/pikachu.png" class="staff-image" alt="a picture of the pokemon character pikachu">
   </div>
           <div class="staff-blurb">
 <p>I'm Safia Ali and I'm da real MC. Up in Git Terminal is where I be. I don't get stuck in Vim – Vim gets stuck in me, and it's all because I'm da realest MC.</p>
@@ -97,27 +97,27 @@
 
 <section id="contact" class="formsection flexcenter">
 
-      <form
+      <form aria-label="contact us"
       id="form" class="sixtych"
     >
       <label for="name">Name:</label>
     </br>
-      <input id="name" name="name" type="text" required/>
+      <input aria-label="name" id="name" name="name" type="text" required/>
 </br>
 
       <label for="coname">Company Name:</label>
     </br>
-      <input id="coname" name="coname" type="text" required/>
+      <input aria-label="company name" id="coname" name="coname" type="text" required/>
 </br>
 
       <label for="email">Email:</label>
     </br>
-      <input id="email" name="email" type="email" required/>
+      <input aria-label="email" id="email" name="email" type="email" required/>
 </br>
 
       <label for="tel">Telephone:</label>
     </br>
-      <input id="tel" name="tel" type="tel" />
+      <input aria-label="telephone number" id="tel" name="tel" type="tel" />
 </br>
 
       <fieldset>
@@ -131,7 +131,7 @@
         />
         <label for="contact-email" class="radio">Email</label>
 
-        <input id="contact-tel" type="radio" name="contact" value="telephone" />
+        <input aria-label="telephone number" id="contact-tel" type="radio" name="contact" value="telephone" />
         <label for="contact-tel" class="radio">Telephone</label>
       </fieldset>
 
@@ -140,13 +140,13 @@
       <textarea name="comments"id="comments"></textarea>
     </br>
 
-      <input id="marketingConsent" name="marketingConsent" type="checkbox" />
+      <input aria-label="marketing consent" id="marketingConsent" name="marketingConsent" type="checkbox" />
       <label for="marketingConsent" class="checkbox">Just wreck my inbox</label>
   </br>
-      <button class="submit-btn" type="submit">Submit</button>
+      <button aria-label="submit contact details" class="submit-btn" type="submit">Submit</button>
     </form>
     </section>
-    <footer>
+    <footer aria-label="copyright details">
       <div class="copyright">
         <hr>
         <p>Copyright © 2021 we are !Loud! All Rights Reserved. </p>
