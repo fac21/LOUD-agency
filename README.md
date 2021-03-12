@@ -38,12 +38,16 @@ Quality: Amy
 We assigned tasks to pairs, and collaborated on the design. 
 
 ### Navigation Menu 
+Safia and Amy mostly worked on this part, though we did all collaborate together to ensure it fit the criteria and to check everything worked okay.
 
 ### About Us Section
+Michael and Craig handled this section – specifically design, content and layout.
 
 ### Contact Form Section
+Safia and Amy worked on this section, using the newly discovered tips from previous workshops!
 
 ### Media Queries
+These were handled when and where appropriate by our respective groups. We implemented their use  in conjunction with flexbox to elements throughout the page such as the about us section and navbar. 
 
 ### Accessibility
 - Using Lighthouse tab in chrome developer tools
