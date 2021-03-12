@@ -9,26 +9,39 @@
     --tertiary-colour: hsl(35, 100%, 55%);
     --tiffany-blue-colour: hsl(174, 62%, 47%);     
     --bg-colour:hsl(100, 100%, 99%);     
-    font-size: 1rem; 
+    --font-size: 1rem;
 }  
-/* Craigs colors- https://coolors.co/011627-fdfffc-2ec4b6-e71d36-ff9f1c
-orange peel- hsl(35, 100%, 55%)
-Rose Madder - hsl(353, 81%, 51%)
-Tiffany Blue- hsl(174, 62, 47)
-Baby Powder- hsl(100, 100%, 99%)gp
-Rich Black Fogra 29 - hsl(207,95%,8%)
-*/
+
+.fascinate-font {
+    font-family: 'Fascinate', cursive;
+}
+
+.font-md {
+    font-size: 2.2rem;
+}
+
+.font-lg {
+    font-size: 3rem;
+}
+
+.font-red {
+    color: var(--secondary-colour);
+}
+
+.font-blue {
+    color: var(--tiffany-blue-colour);
+}
 body{    
     font-family: 'Roboto Mono', monospace;
     color: var(--main-colour); 
-    background: rgb(46,196,182);
+    background: var(--tiffany-blue-colour);
     background: linear-gradient(10deg, rgba(46,196,182,0.2) 20%, rgba(255,159,28,0.2) 75%, rgba(231,29,54,0.2) 100%); 
-    padding-bottom: 100px;
+    
 }
     .navbar{     
     overflow: hidden;     
     position: relative; 
-    padding:1rem;
+    padding:2.5rem;
 } 
 .navbar:hover{
     background-color: var(--tertiary-colour);
@@ -48,18 +61,22 @@ body{
 .nav-linksclass a{     
     color: var(--tiffany-blue-colour);     
     padding: 1rem; 
-    margin: 5vh 0;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+    display: block; 
+    transition: 0.6s ease;
+    border-radius: 1.5rem;
    
 }  
 .logo{
    position:absolute;
-   left:0;
-   top:0;
+   left:1rem;
+   top:1rem;
 }
 .hamburger{
     position:absolute;
-    right:0;
-    top:0;
+    right:1rem;
+    top:1rem;
 }
 .notextdec{     
     text-decoration: none; 
@@ -71,12 +88,25 @@ body{
 }
 
 @media only screen and (min-width:768px) {
-    .nav-linksclass a{     
-        display:flex; 
+    .logo{
+        position:relative;
+        left:0;
+        top:0;
+     }
+
+
+    .nav-linksclass{       
         flex-direction: row;
-        justify-content:center;
-        align-items:center;
-    }  
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-linksclass a{     
+        color: var(--tiffany-blue-colour);     
+        padding: 1rem; 
+        margin: 1rem;
+
+    }
+    
 }
 
 .aboutusclass {
@@ -85,7 +115,7 @@ body{
     align-items: center;
     font-size: 1.7rem;
     text-align: center;
-    
+    margin-top: 3rem;
 }
 
 .main-logo {
@@ -116,13 +146,13 @@ font-family: 'Roboto Mono', monospace;
 font-size: 0.8rem;
 height: 60px;
 width: 150px;
-background-color:rgba(1,22,39, 0.95);
+background-color: var(--main-colour);
 position: absolute;
 z-index: 1;
 top: 15%;
 left: 5%;
 text-align: center;
-color:rgb(253,255,252);
+color: var(--bg-colour);
 padding: 5px;
 border-radius: 5%;
 }
@@ -133,12 +163,12 @@ font-weight: bold;
 font-size: 0.5em;
 position: absolute;
 width: 70%;
-background-color:rgba(253,255,252,0.6);
+background-color:var(--bg-colour);
 top: 76%;
 right: 5%;
-color: #011627;
-padding: 7px;
-outline: thick dashed rgba(1,22,39, 0.2);
+color: var(--main-colour);
+padding: 0.5rem;
+outline: thick dashed var(--main-colour);
 }
 
 .staff-image-container {
@@ -156,7 +186,7 @@ outline: thick dashed rgba(1,22,39, 0.2);
     display: inline;
     margin: auto;
     border-radius: 5%;
-    outline: thick dashed rgba(253,255,252,0.7);
+    outline: thick dashed var(--bg-colour);
 }
 
 .formsection{
@@ -170,4 +200,30 @@ outline: thick dashed rgba(1,22,39, 0.2);
 
 .sixtych{
     max-width: 60ch;
+}
+.submit-btn{
+    transition: 0.6s ease;
+    border-radius: 1.5rem;
+    padding:1rem;
+    background-color: var(--tiffany-blue-colour);  
+    font-family: 'DotGothic16', sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left:4rem;
+}
+.submit-btn:hover{
+    transition: 0.6s ease;
+    background-color:var(--secondary-colour);
+    cursor: pointer;
+    color: var(--bg-colour);
+}
+footer{
+background-color: var(--tertiary-colour);
+  position: relative;
+  margin: 0 ;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+}   
+.copyright p{
+  margin-top: 1rem;
 }
