@@ -220,6 +220,7 @@ outline: thick dashed var(--main-colour);
 
 .submit-btn{
     transition: 0.6s ease;
+    font-size: 1rem;
     border-radius: 1.5rem;
     padding:1rem;
     background-color: var(--tiffany-blue-colour);  
