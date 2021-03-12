@@ -38,16 +38,16 @@ body{
     background: linear-gradient(10deg, rgba(46,196,182,0.2) 20%, rgba(255,159,28,0.2) 75%, rgba(231,29,54,0.2) 100%); 
     
 }
-    .navbar{     
+    .nav-bar{     
     overflow: hidden;     
     position: relative; 
     padding:2.5rem;
 } 
-.navbar:hover{
+.nav-bar:hover{
     background-color: var(--tertiary-colour);
     color: var(--bg-colour);
 }
-.navbar:hover .nav-linksclass a{
+.nav-bar:hover .nav-linksclass a{
     color: var(--bg-colour);
 }
 .nav-linksclass a:hover{
@@ -109,7 +109,7 @@ body{
     
 }
 
-.aboutusclass {
+.about-us-class {
     display: flex;
     flex-direction: column;
     align-items: center;
