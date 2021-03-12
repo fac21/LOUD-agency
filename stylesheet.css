@@ -38,27 +38,27 @@ body{
     background: linear-gradient(10deg, rgba(46,196,182,0.2) 20%, rgba(255,159,28,0.2) 75%, rgba(231,29,54,0.2) 100%); 
     
 }
-    .navbar{     
+    .nav-bar{     
     overflow: hidden;     
     position: relative; 
     padding:2.5rem;
 } 
-.navbar:hover{
+.nav-bar:hover{
     background-color: var(--tertiary-colour);
     color: var(--bg-colour);
 }
-.navbar:hover #nav-links a{
+.nav-bar:hover .nav-linksclass a{
     color: var(--bg-colour);
 }
-#nav-links a:hover{
+.nav-linksclass a:hover{
     background-color: var(--secondary-colour);
 }
-#nav-links{     
+.nav-linksclass{     
     display: none;
     flex-direction: column;
     justify-content:center;
 }
-#nav-links a{     
+.nav-linksclass a{     
     color: var(--tiffany-blue-colour);     
     padding: 1rem; 
     margin-top: 6vh;
@@ -73,7 +73,7 @@ body{
    left:1rem;
    top:1rem;
 }
-#hamburger-menu{
+.hamburger{
     position:absolute;
     right:1rem;
     top:1rem;
@@ -95,12 +95,12 @@ body{
      }
 
 
-    #nav-links{       
+    .nav-linksclass{       
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
-    #nav-links a{     
+    .nav-linksclass a{     
         color: var(--tiffany-blue-colour);     
         padding: 1rem; 
         margin: 1rem;
@@ -109,7 +109,7 @@ body{
     
 }
 
-#aboutus {
+.about-us-class {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,11 +124,9 @@ body{
 }
 
 .about-us-container {
-    display: flex;
     flex-wrap: wrap;
     margin: 1rem 0 0rem 0;
     width: 100%;
-    justify-content: center;
 }
 
 .staff-info {

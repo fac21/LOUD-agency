@@ -13,19 +13,19 @@
 
   <body>
   
-    <nav class="navbar evenlyspaced"> 
+    <nav class="nav-bar evenlyspaced"> 
       <a class="active logo notextdec" href=#home ><img src="images/LOUD-logo.png" alt="Loud company logo, a round blue circle, inside is written we are loud in red font" width="50"></a>       
       <!-- all of these should be hidden in mobile version -->       
-      <div id="nav-links">       
-        <a href=#aboutus class="notextdec" alt="About Us link">About Us</a>         
+      <div id="nav-links" class="nav-linksclass">       
+        <a href=#about-us class="notextdec" alt="About Us link">About Us</a>         
         <a href=#contact class="notextdec"alt="Contact link" >Contact</a>        
       </div>       
-      <a href="javascript:void(0);" id="hamburger-menu"  alt="mobile menu" class="icon" onclick="hamburgerMenu()">
+      <a href="javascript:void(0);" id="hamburger-menu" class="hamburger" alt="mobile menu" class="icon" onclick="hamburgerMenu()">
         <i class="fas fa-bars"></i>
       </a>     
     </nav>   
 
-    <section id="aboutus">
+    <section id="about-us" class="about-us-class">
      
       <img src="images/LOUD-logo.png" alt="Loud company logo, a round blue circle, inside is written we are loud in red font" class="main-logo">
       <p>An agency with a difference: <br>
@@ -34,7 +34,7 @@
         <span class="font-md">is hear to make some noise!</span>
       </p>
   
-      <div class="about-us-container">
+      <div class="about-us-container flexcenter">
         <section class="staff-info">
           <div class="staff-name">
             <h2>Michael Devlin</h2>
